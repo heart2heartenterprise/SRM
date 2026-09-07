@@ -16,6 +16,24 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBF7F0">
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1812071040223222');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1812071040223222&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -2232,6 +2250,16 @@ html.js [data-reveal].is-visible{
 
     try{
       if(window.fbq){
+        /* Meta standard events for Ads Manager optimisation */
+        if(name === "srm_landing_page_view"){
+          window.fbq("track", "ViewContent", params);
+        }else if(name === "srm_primary_cta_click"){
+          window.fbq("track", "InitiateCheckout", params);
+        }else if(name === "srm_google_form_opened" && params.form_intent === "interested"){
+          window.fbq("track", "Lead", params);
+        }
+
+        /* Preserve the detailed SRM event for reporting/debugging */
         window.fbq("trackCustom", name, params);
       }
     }catch(e){}

@@ -1,0 +1,2730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Self-Realization Mentorship Programme (SRM) | Heart2Heart Enterprise</title>
+
+<meta name="description" content="Self-Realization Mentorship Programme (SRM) by Heart2Heart Enterprise — a 7-week guided mentorship for clarity, identity and deliberate living.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Self-Realization Mentorship Programme (SRM) | Heart2Heart Enterprise">
+<meta property="og:description" content="A journey inward to understand who you are. From confusion to clarity. From clarity to action.">
+<meta property="og:site_name" content="Heart2Heart Enterprise">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF7F0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,450;6..72,500;6..72,600&family=Source+Sans+3:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cream:#FBF7F0;
+  --cream-2:#F3ECE1;
+  --ink:#221E28;
+  --ink-2:#4C4655;
+  --plum:#402A62;
+  --plum-deep:#2E1D48;
+  --plum-soft:#8A6FA8;
+  --line:#DED4C6;
+  --white:#FFFFFF;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:"Source Sans 3",system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+button{
+  font:inherit;
+}
+
+a{
+  color:inherit;
+}
+
+h1,
+h2,
+h3,
+.display{
+  margin:0;
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:500;
+  line-height:1.12;
+  letter-spacing:-.015em;
+}
+
+h1{
+  font-size:clamp(2.5rem,8vw,4.75rem);
+}
+
+h2{
+  color:var(--plum);
+  font-size:clamp(2rem,6vw,3.25rem);
+}
+
+h3{
+  font-size:1.55rem;
+}
+
+p{
+  margin:0;
+}
+
+ul{
+  margin:0;
+}
+
+.wrap{
+  width:min(100%,44rem);
+  margin:0 auto;
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+}
+
+.eyebrow{
+  font-size:.75rem;
+  line-height:1.3;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--plum);
+}
+
+.rule{
+  height:1px;
+  margin:0;
+  border:0;
+  background:var(--line);
+}
+
+/* READING PROGRESS */
+
+.reading-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:3px;
+  background:transparent;
+  z-index:100;
+  pointer-events:none;
+}
+
+.reading-progress span{
+  display:block;
+  width:0;
+  height:100%;
+  background:var(--plum);
+  transform-origin:left center;
+}
+
+/* HEADER */
+
+.site-header{
+  border-bottom:1px solid var(--line);
+  background:rgba(251,247,240,.96);
+}
+
+.header-inner{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+
+.logo-link{
+  display:inline-flex;
+  align-items:center;
+}
+
+.logo{
+  height:44px;
+  width:auto;
+}
+
+.header-label{
+  display:none;
+}
+
+/* GENERAL */
+
+section{
+  padding:4rem 0;
+}
+
+.section-intro{
+  max-width:38rem;
+}
+
+.section-intro > p{
+  margin-top:1.5rem;
+  color:var(--ink-2);
+}
+
+/* HERO */
+
+.hero{
+  padding-top:4.5rem;
+  padding-bottom:4.5rem;
+}
+
+.hero-inner{
+  max-width:48rem;
+}
+
+.hero h1{
+  margin-top:1.25rem;
+}
+
+.hero-lead{
+  margin-top:1.5rem;
+  max-width:40rem;
+  color:var(--ink-2);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:clamp(1.45rem,4.5vw,2rem);
+  line-height:1.35;
+}
+
+.hero-sub{
+  margin-top:.65rem;
+  color:var(--ink-2);
+  font-size:clamp(1.1rem,3.5vw,1.35rem);
+}
+
+.hero-meta{
+  margin-top:2rem;
+  font-weight:600;
+  letter-spacing:.01em;
+}
+
+.hero-actions{
+  margin-top:2rem;
+  max-width:22rem;
+}
+
+/* BUTTONS */
+
+.btn-primary{
+  display:inline-flex;
+  width:100%;
+  min-height:56px;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+  padding:1rem 1.5rem;
+  border:1px solid var(--plum);
+  border-radius:5px;
+  background:var(--plum);
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  font-size:1.02rem;
+  font-weight:700;
+  letter-spacing:.01em;
+  cursor:pointer;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.btn-primary:hover{
+  background:var(--plum-deep);
+  border-color:var(--plum-deep);
+  transform:translateY(-1px);
+  box-shadow:0 8px 20px rgba(46,29,72,.12);
+}
+
+.btn-primary:active{
+  transform:translateY(0);
+}
+
+.btn-quiet{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:.75rem 1.25rem;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:transparent;
+  color:var(--ink-2);
+  text-decoration:none;
+  font-size:.95rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:
+    border-color .2s ease,
+    color .2s ease,
+    background .2s ease;
+}
+
+.btn-quiet:hover{
+  border-color:var(--plum-soft);
+  color:var(--plum);
+  background:rgba(64,42,98,.03);
+}
+
+.link-secondary{
+  color:var(--ink-2);
+  text-decoration:underline;
+  text-decoration-color:var(--plum-soft);
+  text-underline-offset:4px;
+  transition:color .2s ease;
+}
+
+.link-secondary:hover{
+  color:var(--plum);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
+  outline:2px solid var(--plum);
+  outline-offset:4px;
+  border-radius:4px;
+}
+
+/* SECONDARY CTA */
+
+.secondary-cta{
+  margin-top:1.25rem;
+  color:var(--ink-2);
+}
+
+/* WHO THIS IS FOR */
+
+.question-list{
+  margin-top:1.5rem;
+  padding-left:1.4rem;
+  color:var(--ink-2);
+}
+
+.question-list li{
+  margin-bottom:.65rem;
+  padding-left:.25rem;
+}
+
+.question-list li::marker{
+  color:var(--plum-soft);
+}
+
+/* PROGRAMME SCALE */
+
+.programme-stats{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  margin-top:2.25rem;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.programme-stat{
+  position:relative;
+  padding:1.5rem 1rem 1.5rem 0;
+}
+
+.programme-stat + .programme-stat{
+  padding-left:1.25rem;
+  border-left:1px solid var(--line);
+}
+
+.stat-number{
+  display:block;
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:clamp(3.25rem,12vw,5rem);
+  line-height:.9;
+  letter-spacing:-.04em;
+}
+
+.stat-label{
+  display:block;
+  margin-top:.5rem;
+  color:var(--ink-2);
+  font-size:.92rem;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* PROGRAMME JOURNEY */
+
+.journey{
+  margin-top:2.25rem;
+}
+
+.journey-item{
+  position:relative;
+  display:grid;
+  grid-template-columns:4.25rem 1fr;
+  gap:1rem;
+  padding:1.5rem 0;
+  border-top:1px solid var(--line);
+  transition:
+    background .3s ease,
+    padding-left .3s ease;
+}
+
+.journey-item:last-child{
+  border-bottom:1px solid var(--line);
+}
+
+.journey-item::before{
+  content:"";
+  position:absolute;
+  left:1.95rem;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:var(--line);
+  z-index:0;
+}
+
+.journey-marker{
+  position:relative;
+  z-index:1;
+  width:3.9rem;
+  height:3.9rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:50%;
+  background:var(--cream);
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.15rem;
+  transition:
+    background .3s ease,
+    color .3s ease,
+    border-color .3s ease,
+    transform .3s ease;
+}
+
+.journey-content{
+  padding-top:.2rem;
+}
+
+.journey-label{
+  font-size:.73rem;
+  line-height:1.3;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--plum);
+}
+
+.journey-title{
+  margin-top:.4rem;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.55rem;
+  line-height:1.15;
+}
+
+.journey-copy{
+  margin-top:.45rem;
+  color:var(--ink-2);
+}
+
+.journey-item.active{
+  padding-left:.5rem;
+  background:rgba(64,42,98,.025);
+}
+
+.journey-item.active .journey-marker{
+  background:var(--plum);
+  border-color:var(--plum);
+  color:#fff;
+  transform:scale(1.04);
+}
+
+/* TOPICS */
+
+.explore-label{
+  margin-top:2.25rem;
+}
+
+.topic-list{
+  margin-top:1rem;
+  padding-left:1.4rem;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:.55rem;
+  color:var(--ink-2);
+}
+
+.topic-list li::marker{
+  color:var(--plum-soft);
+}
+
+@media(min-width:600px){
+  .topic-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:2rem;
+  }
+}
+
+.consultation-note{
+  margin-top:2rem;
+  padding:1.5rem;
+  border-radius:5px;
+  background:var(--cream-2);
+}
+
+.consultation-note p{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.25rem;
+  line-height:1.45;
+}
+
+/* FOUNDER STORY */
+
+.story{
+  background:var(--cream-2);
+}
+
+.story-intro{
+  margin-top:1rem;
+  color:var(--ink-2);
+}
+
+.story-copy{
+  max-width:36rem;
+  margin-top:2rem;
+  font-size:1.07rem;
+  line-height:1.8;
+}
+
+.story-copy > * + *{
+  margin-top:1.5rem;
+}
+
+.story-copy blockquote{
+  margin:2rem 0;
+  padding-left:1.25rem;
+  border-left:2px solid var(--plum-soft);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.3rem;
+  line-height:1.5;
+}
+
+.story-copy blockquote p + p{
+  margin-top:1rem;
+}
+
+.story-close{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.35rem;
+  line-height:1.4;
+}
+
+/* WHY H2H */
+
+.why-copy{
+  max-width:39rem;
+}
+
+.why-copy p{
+  margin-top:1.5rem;
+  color:var(--ink-2);
+}
+
+.promise{
+  margin-top:1.75rem;
+  padding-left:1.25rem;
+  border-left:2px solid var(--plum-soft);
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.45rem;
+  line-height:1.4;
+}
+
+.professional-assurance{
+  margin-top:2rem;
+  padding:1.5rem;
+  border:1px solid var(--line);
+  background:var(--cream-2);
+  border-radius:5px;
+}
+
+.professional-assurance-title{
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.45rem;
+  line-height:1.25;
+}
+
+.professional-assurance p{
+  margin-top:1rem;
+}
+
+/* NOT FOR */
+
+.not-for{
+  background:#F7F0E7;
+}
+
+.not-for p{
+  max-width:38rem;
+  margin-top:1.5rem;
+  color:var(--ink-2);
+}
+
+/* INVESTMENT */
+
+.investment{
+  background:var(--plum-deep);
+  color:#F6F1EA;
+}
+
+.investment h2{
+  color:#fff;
+}
+
+.price{
+  margin-top:1.5rem;
+  color:#fff;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:clamp(3.75rem,13vw,5.75rem);
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+
+.investment-list{
+  margin-top:2rem;
+  padding:0;
+  list-style:none;
+}
+
+.investment-list li{
+  position:relative;
+  padding-left:1.6rem;
+  margin-top:.75rem;
+  color:#F6F1EA;
+}
+
+.investment-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#DCCCEB;
+  font-weight:700;
+}
+
+.onboarding{
+  margin-top:1.75rem;
+  font-weight:600;
+}
+
+.investment-action{
+  margin-top:2rem;
+  max-width:22rem;
+}
+
+.investment .btn-primary{
+  background:#FBF7F0;
+  border-color:#FBF7F0;
+  color:var(--plum-deep);
+}
+
+.investment .btn-primary:hover{
+  background:#fff;
+  border-color:#fff;
+}
+
+/* PAYMENT PANEL */
+
+.payment-panel{
+  margin-top:2.25rem;
+  padding:1.5rem;
+  background:#FBF7F0;
+  color:var(--ink);
+  border-radius:5px;
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+  scroll-margin-top:1rem;
+}
+
+.payment-panel[hidden]{
+  display:none;
+}
+
+.payment-title{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.8rem;
+}
+
+.payment-price{
+  margin-top:.2rem;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:2.75rem;
+  line-height:1;
+}
+
+.payment-label{
+  margin-top:1.5rem;
+}
+
+.payment-method{
+  margin-top:.15rem;
+  font-weight:700;
+  letter-spacing:.04em;
+}
+
+.payment-details{
+  margin:1.5rem 0 0;
+}
+
+.payment-detail{
+  margin-top:1rem;
+}
+
+.payment-detail:first-child{
+  margin-top:0;
+}
+
+.payment-detail dt{
+  color:var(--plum);
+  font-size:.72rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.payment-detail dd{
+  margin:.25rem 0 0;
+  font-size:1.08rem;
+  font-weight:600;
+}
+
+.account-number{
+  font-size:clamp(1.8rem,7vw,2.5rem)!important;
+  line-height:1.1;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:.06em;
+  word-break:break-all;
+}
+
+.copy-row{
+  margin-top:1.25rem;
+}
+
+.copy-state{
+  min-height:1.3rem;
+  margin-top:.45rem;
+  color:var(--ink-2);
+  font-size:.9rem;
+}
+
+.payment-rule{
+  margin:1.75rem 0;
+}
+
+.payment-panel .link-secondary{
+  color:var(--plum);
+}
+
+.payment-action{
+  margin-top:1.25rem;
+  max-width:22rem;
+}
+
+.payment-support{
+  margin-top:1rem;
+  color:var(--ink-2);
+  font-size:.9rem;
+}
+
+/* LEAD */
+
+.lead{
+  background:var(--cream);
+}
+
+.lead-copy{
+  max-width:38rem;
+}
+
+.lead-copy > p{
+  margin-top:1rem;
+  color:var(--ink-2);
+}
+
+.lead-list{
+  margin-top:1rem;
+  padding-left:1.4rem;
+  color:var(--ink-2);
+}
+
+.lead-list li{
+  margin-top:.25rem;
+}
+
+.lead-action{
+  margin-top:1.25rem;
+}
+
+.other-offerings{
+  margin-top:2rem;
+  padding-top:1.25rem;
+  border-top:1px solid var(--line);
+  color:var(--ink-2);
+  font-size:.94rem;
+}
+
+.other-offerings a{
+  color:var(--plum);
+}
+
+/* FAQ */
+
+.faq{
+  margin-top:2rem;
+  border-top:1px solid var(--line);
+}
+
+.faq details{
+  border-bottom:1px solid var(--line);
+}
+
+.faq summary{
+  position:relative;
+  list-style:none;
+  cursor:pointer;
+  padding:1.3rem 2.5rem 1.3rem 0;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.18rem;
+  font-weight:500;
+  line-height:1.35;
+  transition:color .2s ease;
+}
+
+.faq summary::-webkit-details-marker{
+  display:none;
+}
+
+.faq summary::after{
+  content:"+";
+  position:absolute;
+  right:.25rem;
+  top:1.1rem;
+  color:var(--plum);
+  font-family:"Source Sans 3",sans-serif;
+  font-size:1.5rem;
+  font-weight:400;
+  transition:transform .2s ease;
+}
+
+.faq details[open] summary{
+  color:var(--plum);
+}
+
+.faq details[open] summary::after{
+  content:"−";
+}
+
+.faq .answer{
+  max-width:39rem;
+  padding:0 2rem 1.4rem 0;
+  color:var(--ink-2);
+}
+
+.faq .answer p + p{
+  margin-top:1rem;
+}
+
+/* FINAL CTA */
+
+.final{
+  background:var(--cream-2);
+}
+
+.final h2{
+  max-width:40rem;
+}
+
+.final-copy{
+  margin-top:1.5rem;
+  max-width:38rem;
+  font-size:1.15rem;
+}
+
+.final-tagline{
+  margin-top:1.5rem;
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.3rem;
+  line-height:1.4;
+}
+
+.final-action{
+  margin-top:2rem;
+  max-width:22rem;
+}
+
+.ps{
+  margin-top:3rem;
+  max-width:38rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--line);
+}
+
+.ps-label{
+  color:var(--plum);
+  font-size:.75rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.ps p{
+  margin-top:1rem;
+  color:var(--ink-2);
+}
+
+.ps strong{
+  color:var(--ink);
+}
+
+/* FOOTER */
+
+footer{
+  padding:2rem 0 5.5rem;
+  border-top:1px solid var(--line);
+  color:var(--ink-2);
+  font-size:.88rem;
+}
+
+.footer-inner{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+
+/* MOBILE STICKY CTA */
+
+.stickybar{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:90;
+  display:flex;
+  align-items:center;
+  gap:.75rem;
+  padding:.65rem 1rem calc(.65rem + env(safe-area-inset-bottom));
+  background:rgba(251,247,240,.97);
+  border-top:1px solid var(--line);
+  box-shadow:0 -8px 25px rgba(34,30,40,.06);
+}
+
+.stickybar .btn-primary{
+  flex:1;
+  min-height:50px;
+}
+
+/* TOAST */
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:6rem;
+  z-index:120;
+  transform:translateX(-50%) translateY(1rem);
+  padding:.65rem 1rem;
+  border-radius:5px;
+  background:var(--ink);
+  color:#fff;
+  font-size:.9rem;
+  opacity:0;
+  pointer-events:none;
+  transition:
+    opacity .2s ease,
+    transform .2s ease;
+  white-space:nowrap;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
+/* SCROLL REVEAL */
+
+html.js [data-reveal]{
+  opacity:0;
+  transform:translateY(18px);
+  transition:
+    opacity .55s ease,
+    transform .55s cubic-bezier(.2,.7,.2,1);
+  transition-delay:var(--delay,0ms);
+}
+
+html.js [data-reveal].is-visible{
+  opacity:1;
+  transform:none;
+}
+
+/* RESPONSIVE */
+
+@media(min-width:768px){
+
+  body{
+    font-size:18px;
+  }
+
+  section{
+    padding:5.75rem 0;
+  }
+
+  .header-label{
+    display:block;
+  }
+
+  .stickybar{
+    display:none;
+  }
+
+  footer{
+    padding-bottom:2rem;
+  }
+}
+
+@media(max-width:480px){
+
+  .wrap{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+
+  section{
+    padding:3.5rem 0;
+  }
+
+  .hero{
+    padding-top:3.75rem;
+  }
+
+  .programme-stat{
+    padding-right:.75rem;
+  }
+
+  .programme-stat + .programme-stat{
+    padding-left:.9rem;
+  }
+
+  .journey-item{
+    grid-template-columns:3.7rem 1fr;
+    gap:.85rem;
+  }
+
+  .journey-marker{
+    width:3.4rem;
+    height:3.4rem;
+  }
+
+  .journey-item::before{
+    left:1.7rem;
+  }
+
+  .payment-panel{
+    padding:1.25rem;
+  }
+
+  .professional-assurance{
+    padding:1.25rem;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+
+  html.js [data-reveal]{
+    opacity:1;
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="reading-progress" aria-hidden="true">
+  <span id="readingProgress"></span>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+
+    <a href="/" class="logo-link" aria-label="Heart2Heart Enterprise home">
+      <img
+        class="logo"
+        src="heart2heart-logo.png"
+        alt="Heart2Heart Enterprise"
+        width="120"
+        height="95"
+      >
+    </a>
+
+    <span class="eyebrow header-label">
+      Self-Realization Mentorship Programme
+    </span>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section id="hero" class="hero">
+
+  <div class="wrap hero-inner">
+
+    <p class="eyebrow" data-reveal>
+      Heart2Heart Enterprise
+    </p>
+
+    <h1 data-reveal style="--delay:80ms">
+      A Journey Into Self That Births Who You Were Made to Be
+    </h1>
+
+    <p class="hero-lead" data-reveal style="--delay:140ms">
+      A journey inward to understand who you are.
+    </p>
+
+    <p class="hero-sub" data-reveal style="--delay:190ms">
+      From confusion to clarity. From clarity to action.
+    </p>
+
+    <p class="hero-meta" data-reveal style="--delay:240ms">
+      7 Weeks · ₦50,000 · Onboarding: October 1–4
+    </p>
+
+    <div class="hero-actions" data-reveal style="--delay:300ms">
+      <button
+        type="button"
+        class="btn-primary js-enrol"
+        data-loc="hero"
+      >
+        ENROL NOW — ₦50,000
+      </button>
+    </div>
+
+    <p class="secondary-cta" data-reveal style="--delay:350ms">
+      Not ready to enrol?
+      <a
+        class="link-secondary js-form"
+        data-loc="hero"
+        href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfv5nNFR74H79KNAncTtUexgoZz14NEPwEalM6NxCzLP1lPKA/viewform?usp=send_form"
+        target="_blank"
+        rel="noopener"
+      >
+        Tell us what you're seeking clarity about →
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- WHO THIS IS FOR -->
+
+<section id="who">
+
+  <div class="wrap section-intro">
+
+    <h2 data-reveal>
+      WHO THIS IS FOR
+    </h2>
+
+    <p data-reveal style="--delay:80ms">
+      SRM is for the person who is questioning, reforming and deliberately
+      trying to understand who they are and decide who they will become.
+    </p>
+
+    <ul class="question-list" data-reveal style="--delay:130ms">
+
+      <li>
+        <strong>Questioning identity</strong> — trying to understand who you
+        are beyond the labels and expectations around you.
+      </li>
+
+      <li>
+        <strong>Reforming</strong> — recognising parts of yourself that need
+        to change and deliberately working on them.
+      </li>
+
+      <li>
+        <strong>Rebuilding personality</strong> — becoming intentional about
+        the traits, habits and ways of expressing yourself.
+      </li>
+
+      <li>
+        <strong>Creating character</strong> — taking responsibility for the
+        kind of person you decide to become.
+      </li>
+
+      <li>
+        <strong>Structuring your value system</strong> — examining what you
+        believe, what you value and what should guide your decisions.
+      </li>
+
+      <li>
+        <strong>Understanding yourself in relation to others</strong> —
+        examining people, relationships, service and the way you show up in
+        the lives of others.
+      </li>
+
+    </ul>
+
+    <p data-reveal style="--delay:180ms">
+      You don't need to have it figured out before you start. You just need
+      to be willing to examine yourself honestly.
+    </p>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- WHAT YOU'RE JOINING -->
+
+<section id="joining">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      WHAT YOU'RE JOINING
+    </h2>
+
+    <p
+      class="section-intro"
+      data-reveal
+      style="--delay:80ms"
+    >
+      A 7-week guided mentorship built around one central theme:
+      defining your person.
+    </p>
+
+    <div class="programme-stats" data-reveal style="--delay:140ms">
+
+      <div class="programme-stat">
+        <span class="stat-number">6</span>
+        <span class="stat-label">Modules</span>
+      </div>
+
+      <div class="programme-stat">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Topics</span>
+      </div>
+
+    </div>
+
+    <div class="journey" id="journey">
+
+      <div
+        class="journey-item"
+        data-journey
+        data-reveal
+        style="--delay:190ms"
+      >
+
+        <div class="journey-marker">
+          01
+        </div>
+
+        <div class="journey-content">
+
+          <p class="journey-label">
+            Weeks 1–5
+          </p>
+
+          <p class="journey-title">
+            Learning
+          </p>
+
+          <p class="journey-copy">
+            You engage, unlearn, reflect, examine.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div
+        class="journey-item"
+        data-journey
+        data-reveal
+        style="--delay:240ms"
+      >
+
+        <div class="journey-marker">
+          02
+        </div>
+
+        <div class="journey-content">
+
+          <p class="journey-label">
+            Week 6
+          </p>
+
+          <p class="journey-title">
+            Participant Project
+          </p>
+
+          <p class="journey-copy">
+            Application, not just theory.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div
+        class="journey-item"
+        data-journey
+        data-reveal
+        style="--delay:290ms"
+      >
+
+        <div class="journey-marker">
+          03
+        </div>
+
+        <div class="journey-content">
+
+          <p class="journey-label">
+            Final Stage
+          </p>
+
+          <p class="journey-title">
+            Examination + Closing Ceremony
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p
+      class="explore-label"
+      data-reveal
+      style="--delay:340ms"
+    >
+      You'll explore:
+    </p>
+
+    <ul
+      class="topic-list"
+      data-reveal
+      style="--delay:380ms"
+    >
+
+      <li>Self &amp; Identity</li>
+      <li>Character &amp; Mindset</li>
+      <li>Service</li>
+      <li>People &amp; Relationships</li>
+      <li>Values &amp; Deliberate Living</li>
+      <li>God's love and Questions around it</li>
+
+    </ul>
+
+    <div
+      class="consultation-note"
+      data-reveal
+      style="--delay:430ms"
+    >
+      <p>
+        Every participant also gets a free, one-time 1-on-1 consultation
+        with FWC during the final week.
+      </p>
+    </div>
+
+    <div
+      class="investment-action"
+      data-reveal
+      style="--delay:480ms"
+    >
+
+      <button
+        type="button"
+        class="btn-primary js-enrol"
+        data-loc="after-joining"
+      >
+        ENROL NOW — ₦50,000
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- WHY PROGRAMME EXISTS -->
+
+<section id="story" class="story">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      WHY THIS PROGRAMME EXISTS
+    </h2>
+
+    <p
+      class="story-intro"
+      data-reveal
+      style="--delay:80ms"
+    >
+      Here's why SRM exists, in FWC's own words.
+    </p>
+
+    <div class="story-copy">
+
+      <p data-reveal style="--delay:120ms">
+        At 11 or 12, I had it rough with life. My first attempt at suicide
+        and season of feeling worthless happened during this period.
+      </p>
+
+      <p data-reveal style="--delay:150ms">
+        Think of that young me: an only son among girls, multiple health
+        issues, a horrible character as judged by several, the typical
+        weakling of a boy, academically dull. People's reactions and my
+        school results didn't prove me wrong. How could they?
+      </p>
+
+      <p data-reveal style="--delay:180ms">
+        At 13, I moved to boarding school, and something began to shift
+        — though there was still no clarity.
+      </p>
+
+      <p data-reveal style="--delay:210ms">
+        In that season, I found two lines that stayed with me:
+      </p>
+
+      <blockquote data-reveal style="--delay:240ms">
+
+        <p>
+          "God who made you without you cannot save you without you."
+        </p>
+
+        <p>
+          "Everything you set out to achieve as a goal in your life sums up to you."
+        </p>
+
+      </blockquote>
+
+      <p data-reveal style="--delay:270ms">
+        You're not a person made up of several individuals. You're a
+        mixture of everything — your upbringing, your relationships, your
+        traits, everything you've learned, consciously or not. So you are
+        all your goals, regardless of the number. Seeing yourself that way
+        is the salvation you need.
+      </p>
+
+      <p data-reveal style="--delay:300ms">
+        Every achievement reveals who you are. The process reveals the formation.
+      </p>
+
+      <p data-reveal style="--delay:330ms">
+        You aren't defined by what you achieve — your achievements are proof of who you are.
+      </p>
+
+      <p
+        class="story-close"
+        data-reveal
+        style="--delay:360ms"
+      >
+        That's what self-realization is. Nothing outside you affects you
+        until you let it in and let it become part of your makeup.
+      </p>
+
+      <p data-reveal style="--delay:390ms">
+        This programme is that process — built from someone who fought
+        through it, for people ready to do the same.
+      </p>
+
+    </div>
+
+    <div
+      class="investment-action"
+      data-reveal
+      style="--delay:430ms"
+    >
+
+      <button
+        type="button"
+        class="btn-primary js-enrol"
+        data-loc="after-story"
+      >
+        ENROL NOW — ₦50,000
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY H2H -->
+
+<section id="why-h2h">
+
+  <div class="wrap why-copy">
+
+    <h2 data-reveal>
+      WHY HEART2HEART
+    </h2>
+
+    <p data-reveal style="--delay:90ms">
+      Heart2Heart Enterprise is a values-based, Christian faith-informed
+      counselling, consulting and mentorship enterprise. We believe that
+      professional care and Christian faith do not have to exist in
+      opposition.
+    </p>
+
+    <p data-reveal style="--delay:140ms">
+      In a world where professional services can sometimes become vehicles
+      for imposing the personal religious convictions of the professional
+      on people from different backgrounds, Heart2Heart takes a different
+      approach. Our Christian identity informs our values and principles,
+      but professionalism, competence, respect and sound practice remain
+      essential to how we serve people.
+    </p>
+
+    <p data-reveal style="--delay:190ms">
+      This means that engaging with Heart2Heart does not mean surrendering
+      professional standards for religious dogma. You can expect a space
+      where your person, background and questions are treated with respect,
+      while the work remains grounded in professional knowledge and
+      Christocentric principles.
+    </p>
+
+    <div
+      class="professional-assurance"
+      data-reveal
+      style="--delay:240ms"
+    >
+
+      <p class="professional-assurance-title">
+        Professional knowledge. Christocentric principles.
+      </p>
+
+      <p>
+        FWC is a graduate Psychologist, a certified life coach and is
+        currently pursuing a Master's Degree in Clinical Psychology.
+        So, be rest assured to have professional, scientifically grounded
+        knowledge guarded by Christocentric principles.
+      </p>
+
+    </div>
+
+    <p data-reveal style="--delay:300ms">
+      SRM therefore uses Christian faith as a framework of values and
+      Christocentric principles, while maintaining a clear distinction
+      between faith-informed mentorship and professional counselling.
+    </p>
+
+    <div
+      class="promise"
+      data-reveal
+      style="--delay:350ms"
+    >
+      Clarity to make precise actions.
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- WHO THIS IS NOT FOR -->
+
+<section id="not-for" class="not-for">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      WHO THIS IS NOT FOR
+    </h2>
+
+    <p data-reveal style="--delay:90ms">
+      SRM requires participation, reflection, honesty, and the courage
+      to examine things about yourself that may be uncomfortable.
+      It runs on diligence, truth, and ultimate honesty.
+    </p>
+
+    <p data-reveal style="--delay:140ms">
+      If you want someone to make every decision for you, this isn't it.
+      If you're ready to understand yourself, this may be worth it.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- INVESTMENT -->
+
+<section id="investment" class="investment">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      YOUR INVESTMENT
+    </h2>
+
+    <p
+      class="price"
+      data-reveal
+      style="--delay:90ms"
+    >
+      ₦50,000
+    </p>
+
+    <ul
+      class="investment-list"
+      data-reveal
+      style="--delay:150ms"
+    >
+
+      <li>7-week guided mentorship</li>
+      <li>5 weeks learning + 1 week project</li>
+      <li>Examination + Closing Ceremony</li>
+      <li>Free 1-on-1 consultation with FWC</li>
+
+    </ul>
+
+    <p
+      class="onboarding"
+      data-reveal
+      style="--delay:210ms"
+    >
+      Onboarding: October 1–4
+    </p>
+
+    <div
+      class="investment-action"
+      data-reveal
+      style="--delay:270ms"
+    >
+
+      <button
+        type="button"
+        class="btn-primary js-enrol"
+        data-loc="investment"
+      >
+        ENROL NOW FOR ₦50,000
+      </button>
+
+    </div>
+
+    <!-- PAYMENT -->
+
+    <div
+      id="secure"
+      class="payment-panel"
+      hidden
+      tabindex="-1"
+      aria-labelledby="payment-title"
+    >
+
+      <h3
+        id="payment-title"
+        class="payment-title"
+      >
+        SECURE YOUR PLACE
+      </h3>
+
+      <p class="eyebrow payment-label">
+        Programme investment
+      </p>
+
+      <p class="payment-price">
+        ₦50,000
+      </p>
+
+      <p class="eyebrow payment-label">
+        Payment method
+      </p>
+
+      <p class="payment-method">
+        BANK TRANSFER
+      </p>
+
+      <dl class="payment-details">
+
+        <div class="payment-detail">
+          <dt>Bank</dt>
+          <dd>Sparkle MFB</dd>
+        </div>
+
+        <div class="payment-detail">
+          <dt>Account name</dt>
+          <dd>Heart2Heart Enterprise</dd>
+        </div>
+
+        <div class="payment-detail">
+          <dt>Account number</dt>
+          <dd
+            class="account-number"
+            id="acctNum"
+          >
+            1003042432
+          </dd>
+        </div>
+
+      </dl>
+
+      <div class="copy-row">
+
+        <button
+          type="button"
+          id="copyBtn"
+          class="btn-quiet"
+          aria-label="Copy account number 1003042432"
+        >
+          COPY ACCOUNT NUMBER
+        </button>
+
+        <p
+          class="copy-state"
+          id="copyState"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </div>
+
+      <hr class="rule payment-rule">
+
+      <p>
+        <strong>Already transferred ₦50,000?</strong>
+      </p>
+
+      <p class="payment-support">
+        After making your ₦50,000 transfer, complete the form below so we
+        can receive your details and payment confirmation.
+      </p>
+
+      <div class="payment-action">
+
+        <a
+          class="btn-primary js-paid"
+          data-loc="payment-panel"
+          href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfv5nNFR74H79KNAncTtUexgoZz14NEPwEalM6NxCzLP1lPKA/viewform?usp=send_form"
+          target="_blank"
+          rel="noopener"
+        >
+          I'VE MADE PAYMENT
+        </a>
+
+      </div>
+
+      <p class="payment-support">
+        Your payment is verified by Heart2Heart Enterprise after you submit
+        your details and payment confirmation through the form.
+        Confirmation email:
+        <a
+          class="link-secondary"
+          href="mailto:heart2heartacad@gmail.com"
+        >
+          heart2heartacad@gmail.com
+        </a>
+      </p>
+
+      <p class="payment-support">
+        Need help?
+        WhatsApp:
+        <a
+          class="link-secondary"
+          href="https://wa.me/2349059025622"
+          target="_blank"
+          rel="noopener"
+        >
+          09059025622
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NOT READY -->
+
+<section id="lead" class="lead">
+
+  <div class="wrap lead-copy">
+
+    <h2
+      data-reveal
+      style="font-size:clamp(1.65rem,5vw,2.3rem)"
+    >
+      NOT READY YET? TELL US WHERE YOU'RE AT
+    </h2>
+
+    <p data-reveal style="--delay:90ms">
+      Leave your details and we'll reach out to help you figure out if SRM is right for you.
+    </p>
+
+    <ul
+      class="lead-list"
+      data-reveal
+      style="--delay:140ms"
+    >
+      <li>Name</li>
+      <li>WhatsApp number</li>
+      <li>Email address</li>
+      <li>What best describes your current situation?</li>
+    </ul>
+
+    <div
+      class="lead-action"
+      data-reveal
+      style="--delay:190ms"
+    >
+
+      <a
+        class="btn-quiet js-form"
+        data-loc="lead-section"
+        href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfv5nNFR74H79KNAncTtUexgoZz14NEPwEalM6NxCzLP1lPKA/viewform?usp=send_form"
+        target="_blank"
+        rel="noopener"
+      >
+        Tell us what you're seeking clarity about →
+      </a>
+
+    </div>
+
+    <div
+      class="other-offerings"
+      data-reveal
+      style="--delay:250ms"
+    >
+      Are you in need of coaching or consultation around ideas and idea
+      execution, addiction recovery, or struggling with academics at
+      secondary or tertiary level?
+      <a
+        href="https://tinyurl.com/FWCbook-a-session"
+        target="_blank"
+        rel="noopener"
+      >
+        Book a consultation session.
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- FAQ -->
+
+<section id="faq">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      FREQUENTLY ASKED QUESTIONS
+    </h2>
+
+    <div class="faq" data-reveal style="--delay:100ms">
+
+      <details>
+
+        <summary>
+          How is the Self-Realization Mentorship Programme structured?
+        </summary>
+
+        <div class="answer">
+          The Self-Realization Mentorship Programme runs for 7 weeks.
+          The structure consists of 5 weeks of learning, 1 week of project
+          work, followed by an examination and closing ceremony.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          What exactly will I be exploring during SRM?
+        </summary>
+
+        <div class="answer">
+          SRM explores Self &amp; Identity, Character &amp; Mindset, Service,
+          People &amp; Relationships, Values &amp; Deliberate Living, and
+          God's love and Questions around it across 6 modules and 20+ topics.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          How much does the Self-Realization Mentorship Programme cost?
+        </summary>
+
+        <div class="answer">
+          The programme investment is ₦50,000.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          Is there an age limit for SRM?
+        </summary>
+
+        <div class="answer">
+          None. However, the keen focus of the enterprise is with teenagers
+          &amp; young adults. Exclusive sessions exist for senior citizens
+          and most senior citizens who do not fall within afore age brackets
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          Is SRM a Christian mentorship programme?
+        </summary>
+
+        <div class="answer">
+
+          <p>
+            Yes. Heart2Heart Enterprise is a Christian organization, and
+            SRM is guided by Christocentric principles.
+          </p>
+
+          <p>
+            However, this is not a church scheme, neither is it in any way
+            using teachings of church instead of professional counselling.
+          </p>
+
+          <p>
+            FWC is a graduate Psychologist, certified life coach and
+            currently pursuing a Master's Degree in Clinical Psychology,
+            so be rest assured to have professional, scientifically grounded
+            knowledge guarded by Christocentric principles.
+          </p>
+
+          <p>
+            Our Christian identity informs the values and principles that
+            guide our work, but we do not believe professional services
+            should become a means of imposing religious dogma on people
+            from differing backgrounds. You are therefore in a space where
+            professionalism, respect and competence are taken seriously,
+            while the work remains grounded in Christocentric principles.
+          </p>
+
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          Do I need to already know my purpose before joining SRM?
+        </summary>
+
+        <div class="answer">
+
+          <p>
+            Not necessarily.
+          </p>
+
+          <p>
+            On SRM, purpose is understood slightly differently from the
+            conventional meaning of the word.
+          </p>
+
+          <p>
+            The programme does not begin with the assumption that purpose
+            simply means finding a career, discovering a grand calling,
+            or identifying one specific thing you were born to do.
+          </p>
+
+          <p>
+            You will first engage with questions around your person,
+            your character, your values, your relationships, your expression
+            and the way you deliberately live.
+          </p>
+
+          <p>
+            Your understanding of purpose develops from there.
+          </p>
+
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          What does the 1-on-1 consultation with FWC involve?
+        </summary>
+
+        <div class="answer">
+          Every enrolled participant receives one free, one-time 1-on-1
+          consultation with FWC during the final week. It is a general
+          consultation on anything the participant wants to discuss.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          When does onboarding take place?
+        </summary>
+
+        <div class="answer">
+          Onboarding takes place October 1–4.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          What kind of person is SRM designed for?
+        </summary>
+
+        <div class="answer">
+          SRM is designed for individuals who are questioning their identity,
+          reforming, rebuilding their personality, creating character,
+          structuring their value system, and seeking to understand themselves
+          in relation to others.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          Is SRM simply about being motivated or finding quick answers?
+        </summary>
+
+        <div class="answer">
+          No. SRM is a guided process of examination, learning, unlearning,
+          reflection, application and greater self-understanding.
+        </div>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FINAL CTA -->
+
+<section id="final" class="final">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      Your next chapter deserves more than guesswork.
+    </h2>
+
+    <p
+      class="final-copy"
+      data-reveal
+      style="--delay:100ms"
+    >
+      Seven weeks. Real work. A closing ceremony.
+      Personal time with FWC. All for ₦50,000.
+    </p>
+
+    <p
+      class="final-tagline"
+      data-reveal
+      style="--delay:150ms"
+    >
+      From confusion to clarity.<br>
+      From clarity to action.
+    </p>
+
+    <p
+      class="final-copy"
+      data-reveal
+      style="--delay:200ms"
+    >
+      Onboarding: October 1–4
+    </p>
+
+    <div
+      class="final-action"
+      data-reveal
+      style="--delay:250ms"
+    >
+
+      <button
+        type="button"
+        class="btn-primary js-enrol"
+        data-loc="final"
+      >
+        ENROL IN SRM FOR ₦50,000
+      </button>
+
+    </div>
+
+    <div
+      class="ps"
+      data-reveal
+      style="--delay:320ms"
+    >
+
+      <p class="ps-label">
+        P.S.
+      </p>
+
+      <p>
+        There will always be another video to watch.
+        Another person to ask.
+        Another opinion to consider.
+        Another day when you tell yourself you'll figure it out later.
+      </p>
+
+      <p>
+        But clarity rarely comes from endlessly postponing the questions.
+      </p>
+
+      <p>
+        Sometimes you have to stop.
+        Look inward.
+        And be willing to understand yourself.
+      </p>
+
+      <p>
+        <strong>
+          If that is the work you are ready to begin, SRM is waiting for you.
+        </strong>
+      </p>
+
+      <div class="final-action">
+
+        <button
+          type="button"
+          class="btn-primary js-enrol"
+          data-loc="ps"
+        >
+          START MY SELF-REALIZATION JOURNEY
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- MOBILE CTA -->
+
+<div class="stickybar">
+
+  <button
+    type="button"
+    class="btn-primary js-enrol"
+    data-loc="mobile-sticky"
+  >
+    ENROL NOW
+  </button>
+
+</div>
+
+<div
+  id="toast"
+  class="toast"
+  role="status"
+  aria-live="polite"
+>
+  Account number copied
+</div>
+
+<footer>
+
+  <div class="wrap footer-inner">
+    <span>Heart2Heart Enterprise</span>
+    <span>Self-Realization Mentorship Programme</span>
+  </div>
+
+</footer>
+
+<script>
+(function(){
+
+  "use strict";
+
+  document.documentElement.classList.add("js");
+
+  var FORM_URL =
+    "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfv5nNFR74H79KNAncTtUexgoZz14NEPwEalM6NxCzLP1lPKA/viewform?usp=send_form";
+
+  var ACCOUNT_NUMBER = "1003042432";
+
+  /* ANALYTICS */
+
+  function track(name, params){
+
+    params = params || {};
+
+    try{
+      if(window.fbq){
+        window.fbq("trackCustom", name, params);
+      }
+    }catch(e){}
+
+    try{
+      if(window.gtag){
+        window.gtag("event", name, params);
+      }
+    }catch(e){}
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push(
+      Object.assign(
+        {event:name},
+        params
+      )
+    );
+  }
+
+  track("srm_landing_page_view");
+
+  /* READING PROGRESS */
+
+  var progress =
+    document.getElementById("readingProgress");
+
+  function updateReadingProgress(){
+
+    var doc =
+      document.documentElement;
+
+    var scrollTop =
+      window.pageYOffset ||
+      doc.scrollTop;
+
+    var scrollHeight =
+      doc.scrollHeight -
+      window.innerHeight;
+
+    var percentage =
+      scrollHeight > 0
+        ? (scrollTop / scrollHeight) * 100
+        : 0;
+
+    percentage =
+      Math.min(100, Math.max(0, percentage));
+
+    progress.style.width =
+      percentage + "%";
+  }
+
+  window.addEventListener(
+    "scroll",
+    updateReadingProgress,
+    {passive:true}
+  );
+
+  window.addEventListener(
+    "resize",
+    updateReadingProgress
+  );
+
+  updateReadingProgress();
+
+  /* SCROLL REVEALS */
+
+  var revealElements =
+    document.querySelectorAll("[data-reveal]");
+
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+  if(
+    "IntersectionObserver" in window &&
+    !reduceMotion
+  ){
+
+    var revealObserver =
+      new IntersectionObserver(
+        function(entries, observer){
+
+          entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+              entry.target.classList.add(
+                "is-visible"
+              );
+
+              observer.unobserve(
+                entry.target
+              );
+            }
+
+          });
+
+        },
+        {
+          threshold:.12,
+          rootMargin:"0px 0px -40px 0px"
+        }
+      );
+
+    revealElements.forEach(function(el){
+      revealObserver.observe(el);
+    });
+
+  }else{
+
+    revealElements.forEach(function(el){
+      el.classList.add("is-visible");
+    });
+
+  }
+
+  /* PAYMENT PANEL */
+
+  var panel =
+    document.getElementById("secure");
+
+  function openPayment(location){
+
+    track(
+      "srm_primary_cta_click",
+      {
+        cta_location:location
+      }
+    );
+
+    var firstOpen =
+      panel.hasAttribute("hidden");
+
+    panel.removeAttribute("hidden");
+
+    if(firstOpen){
+
+      track(
+        "srm_payment_instructions_opened",
+        {
+          cta_location:location
+        }
+      );
+
+    }
+
+    requestAnimationFrame(function(){
+
+      panel.scrollIntoView({
+        behavior:reduceMotion
+          ? "auto"
+          : "smooth",
+        block:"start"
+      });
+
+      setTimeout(function(){
+
+        try{
+          panel.focus({
+            preventScroll:true
+          });
+        }catch(e){
+          panel.focus();
+        }
+
+      },350);
+
+    });
+
+  }
+
+  document
+    .querySelectorAll(".js-enrol")
+    .forEach(function(button){
+
+      button.addEventListener(
+        "click",
+        function(){
+
+          openPayment(
+            button.dataset.loc ||
+            "unknown"
+          );
+
+        }
+      );
+
+    });
+
+  /* SECONDARY FORM LINKS */
+
+  document
+    .querySelectorAll(".js-form")
+    .forEach(function(link){
+
+      link.addEventListener(
+        "click",
+        function(){
+
+          var location =
+            link.dataset.loc ||
+            "unknown";
+
+          track(
+            "srm_secondary_cta_click",
+            {
+              cta_location:location
+            }
+          );
+
+          track(
+            "srm_google_form_opened",
+            {
+              form_intent:"interested",
+              cta_location:location
+            }
+          );
+
+          link.href = FORM_URL;
+
+        }
+      );
+
+    });
+
+  /* PAYMENT CONFIRMATION */
+
+  document
+    .querySelectorAll(".js-paid")
+    .forEach(function(link){
+
+      link.addEventListener(
+        "click",
+        function(){
+
+          track(
+            "srm_ive_made_payment_click",
+            {
+              cta_location:
+                link.dataset.loc ||
+                "payment-panel"
+            }
+          );
+
+          track(
+            "srm_google_form_opened",
+            {
+              form_intent:
+                "payment_confirmation"
+            }
+          );
+
+          link.href = FORM_URL;
+
+        }
+      );
+
+    });
+
+  /* COPY ACCOUNT NUMBER */
+
+  var copyBtn =
+    document.getElementById("copyBtn");
+
+  var copyState =
+    document.getElementById("copyState");
+
+  var toast =
+    document.getElementById("toast");
+
+  var toastTimer;
+
+  function showToast(){
+
+    clearTimeout(toastTimer);
+
+    toast.classList.add("show");
+
+    toastTimer =
+      setTimeout(function(){
+        toast.classList.remove("show");
+      },2000);
+
+  }
+
+  function copyFallback(){
+
+    var textarea =
+      document.createElement("textarea");
+
+    textarea.value =
+      ACCOUNT_NUMBER;
+
+    textarea.setAttribute(
+      "readonly",
+      ""
+    );
+
+    textarea.style.position =
+      "fixed";
+
+    textarea.style.opacity =
+      "0";
+
+    document.body.appendChild(
+      textarea
+    );
+
+    textarea.select();
+
+    var successful = false;
+
+    try{
+      successful =
+        document.execCommand("copy");
+    }catch(e){
+      successful = false;
+    }
+
+    document.body.removeChild(
+      textarea
+    );
+
+    return successful;
+  }
+
+  copyBtn.addEventListener(
+    "click",
+    function(){
+
+      track(
+        "srm_copy_account_number_click"
+      );
+
+      function success(){
+
+        copyState.textContent =
+          "Account number copied";
+
+        showToast();
+
+      }
+
+      function failure(){
+
+        copyState.textContent =
+          "Account number: " +
+          ACCOUNT_NUMBER;
+
+      }
+
+      if(
+        navigator.clipboard &&
+        navigator.clipboard.writeText
+      ){
+
+        navigator.clipboard
+          .writeText(ACCOUNT_NUMBER)
+          .then(
+            success,
+            function(){
+
+              if(copyFallback()){
+                success();
+              }else{
+                failure();
+              }
+
+            }
+          );
+
+      }else{
+
+        if(copyFallback()){
+          success();
+        }else{
+          failure();
+        }
+
+      }
+
+    }
+  );
+
+  /* INTERACTIVE JOURNEY */
+
+  var journeyItems =
+    document.querySelectorAll(
+      "[data-journey]"
+    );
+
+  if(
+    "IntersectionObserver" in window &&
+    !reduceMotion
+  ){
+
+    var journeyObserver =
+      new IntersectionObserver(
+        function(entries){
+
+          entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+              journeyItems.forEach(
+                function(item){
+                  item.classList.remove(
+                    "active"
+                  );
+                }
+              );
+
+              entry.target.classList.add(
+                "active"
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold:.55,
+          rootMargin:"-10% 0px -30% 0px"
+        }
+      );
+
+    journeyItems.forEach(function(item){
+      journeyObserver.observe(item);
+    });
+
+  }
+
+  /* FAQ */
+
+  var faqItems =
+    document.querySelectorAll(
+      ".faq details"
+    );
+
+  faqItems.forEach(function(item){
+
+    item.addEventListener(
+      "toggle",
+      function(){
+
+        if(!item.open){
+          return;
+        }
+
+        faqItems.forEach(
+          function(other){
+
+            if(
+              other !== item &&
+              other.open
+            ){
+              other.open = false;
+            }
+
+          }
+        );
+
+      }
+    );
+
+  });
+
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Course",
+  "name":"Self-Realization Mentorship Programme",
+  "description":"A 7-week guided mentorship built around one central theme: defining your person.",
+  "provider":{
+    "@type":"Organization",
+    "name":"Heart2Heart Enterprise",
+    "email":"heart2heartacad@gmail.com"
+  },
+  "offers":{
+    "@type":"Offer",
+    "price":"50000",
+    "priceCurrency":"NGN",
+    "category":"Mentorship programme"
+  }
+}
+</script>
+
+</body>
+</html>

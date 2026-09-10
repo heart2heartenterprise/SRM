@@ -2234,13 +2234,14 @@ html.js [data-reveal].is-visible{
 (function(){
 
   "use strict";
-  /* META CLICK ID */
-  var urlParams = new URLSearchParams(window.location.search);
-  var fbclid = urlParams.get("fbclid") || "";
+ /* META CLICK ID */
+var urlParams = new URLSearchParams(window.location.search);
+var fbclid = urlParams.get("fbclid") || "";
 
-  if (fbclid) {
-    localStorage.setItem("srm_fbclid", fbclid);
-  }
+if (fbclid) {
+  var fbc = "fb.1." + Date.now() + "." + fbclid;
+  localStorage.setItem("srm_fbclid", fbc);
+}
 
   document.documentElement.classList.add("js");
 

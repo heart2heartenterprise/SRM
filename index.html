@@ -2234,6 +2234,13 @@ html.js [data-reveal].is-visible{
 (function(){
 
   "use strict";
+  /* META CLICK ID */
+  var urlParams = new URLSearchParams(window.location.search);
+  var fbclid = urlParams.get("fbclid") || "";
+
+  if (fbclid) {
+    localStorage.setItem("srm_fbclid", fbclid);
+  }
 
   document.documentElement.classList.add("js");
 

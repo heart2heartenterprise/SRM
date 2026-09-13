@@ -527,6 +527,70 @@ summary:focus-visible{
   line-height:1.45;
 }
 
+/* TESTIMONIALS */
+
+.testimonials{
+  background:var(--cream);
+}
+
+.testimonial-intro{
+  max-width:38rem;
+  margin-top:1rem;
+  color:var(--ink-2);
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+  margin-top:2.25rem;
+}
+
+.testimonial-card{
+  padding:1.5rem;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:var(--cream-2);
+}
+
+.testimonial-card.featured{
+  border-color:var(--plum-soft);
+  background:#F1E9F7;
+}
+
+.testimonial-quote{
+  color:var(--ink-2);
+  font-size:1rem;
+  line-height:1.75;
+}
+
+.testimonial-name{
+  margin-top:1.25rem;
+  color:var(--plum);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.3rem;
+  line-height:1.2;
+}
+
+.testimonial-label{
+  margin-top:.3rem;
+  color:var(--ink-2);
+  font-size:.82rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+@media(min-width:768px){
+  .testimonial-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .testimonial-card.featured{
+    grid-column:1 / -1;
+  }
+}
+
 /* FOUNDER STORY */
 
 .story{
@@ -681,6 +745,27 @@ summary:focus-visible{
 .investment .btn-primary:hover{
   background:#fff;
   border-color:#fff;
+}
+
+/* VALUE STACK */
+
+.value-stack-intro{
+  margin-top:1.5rem;
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.45rem;
+  line-height:1.4;
+}
+
+.consultation-value{
+  margin-top:1.5rem;
+  padding:1.25rem;
+  border-left:2px solid #DCCCEB;
+  background:rgba(255,255,255,.06);
+  color:#F6F1EA;
+}
+
+.consultation-value strong{
+  color:#fff;
 }
 
 /* PAYMENT PANEL */
@@ -1163,7 +1248,11 @@ html.js [data-reveal].is-visible{
     </p>
 
     <p class="hero-meta" data-reveal style="--delay:240ms">
-      7 Weeks · ₦50,000 · Onboarding: October 1–4
+      7 Weeks · ₦50,000 · Onboarding: October 1–10
+    </p>
+
+    <p class="hero-meta" data-reveal style="--delay:280ms">
+      Registration closes October 7.
     </p>
 
     <div class="hero-actions" data-reveal style="--delay:300ms">
@@ -1406,7 +1495,8 @@ html.js [data-reveal].is-visible{
     >
       <p>
         Every participant also gets a free, one-time 1-on-1 consultation
-        with FWC during the final week.
+        with FWC during the final week. This consultation is ordinarily
+        valued at ₦80,000 and is included in SRM at no additional cost.
       </p>
     </div>
 
@@ -1423,6 +1513,82 @@ html.js [data-reveal].is-visible{
       >
         ENROL NOW — ₦50,000
       </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="rule">
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="testimonials">
+
+  <div class="wrap">
+
+    <h2 data-reveal>
+      WHAT SRM HAS CHANGED FOR PEOPLE
+    </h2>
+
+    <p
+      class="testimonial-intro"
+      data-reveal
+      style="--delay:80ms"
+    >
+      Hear from people who have experienced the Self-Realization Mentorship Programme.
+    </p>
+
+    <div class="testimonial-grid">
+
+      <article class="testimonial-card" data-reveal style="--delay:130ms">
+        <p class="testimonial-quote">
+          "The Self Realization Mentorship program was an eye-opener for me. At first, I didn’t see the need to participate, but I’m glad I did because it helped me cut off excuses and become more intentional with my daily life. I now take deliberate actions with purpose, and the experience has truly transformed the way I see and live my life."
+        </p>
+        <p class="testimonial-name">Ezirim Johnbosco</p>
+        <p class="testimonial-label">SRM Participant</p>
+      </article>
+
+      <article class="testimonial-card" data-reveal style="--delay:170ms">
+        <p class="testimonial-quote">
+          "The Self-Realisation Mentorship Class 2024 transformed the way I value my time and myself. I learned to focus, cut out distractions, and make intentional changes that shaped who I am today. The difference between me then and me now is remarkable — I now handle things I once thought were beyond me, and I live with greater clarity and purpose."
+        </p>
+        <p class="testimonial-name">Stephanie Anyado</p>
+        <p class="testimonial-label">SRM Participant</p>
+      </article>
+
+      <article class="testimonial-card" data-reveal style="--delay:210ms">
+        <p class="testimonial-quote">
+          "After the program, I can say I've gained more confidence in my abilities. I became bold and brave towards everyone and everything. I had the mindset that anything was possible. And up till now, all of these are afresh in my spirit, soul, and body. I became more joyful and more optimistic about life. I began taking life seriously, exploring stuff I could never imagined. I'm glad to have participated."
+        </p>
+        <p class="testimonial-name">Elizabeth Olakunle</p>
+        <p class="testimonial-label">SRM Participant</p>
+      </article>
+
+      <article class="testimonial-card" data-reveal style="--delay:250ms">
+        <p class="testimonial-quote">
+          "The Self-Realization Mentorship Program was one of the most defining parts of my undergraduate journey. It opened my eyes to the power of living with intentionality and taught me to take charge of my daily choices. I learned to consciously go through each day with purpose, step boldly into new spaces and opportunities, and approach life with accountability. Looking back, I see how much this mentorship shaped my mindset and the way I pursue growth and impact."
+        </p>
+        <p class="testimonial-name">Ezirim Jane</p>
+        <p class="testimonial-label">SRM Participant</p>
+      </article>
+
+      <article class="testimonial-card" data-reveal style="--delay:290ms">
+        <p class="testimonial-quote">
+          "The Self Realization Mentorship program was what I truly needed to embrace my own uniqueness. I now walk conscious of my identity. I am bolder than I was before and I have learned how to adequately place people in my life. Funnily enough, my life has taken a very dramatic and beautiful turn since last year and I am now living consciously and intentionally."
+        </p>
+        <p class="testimonial-name">Anita Babs</p>
+        <p class="testimonial-label">SRM Participant</p>
+      </article>
+
+      <article class="testimonial-card featured" data-reveal style="--delay:330ms">
+        <p class="testimonial-quote">
+          "I'm a product. SRM helped me confront my fears, heal my past wounds, find my true self, discover my true personality, own my Creator mindset. Now, I'm in a well paying job paying 10× what I used to be paid. I have more confidence to demand from life what I want."
+        </p>
+        <p class="testimonial-name">SRM Participant</p>
+        <p class="testimonial-label">Participant experience</p>
+      </article>
 
     </div>
 
@@ -1646,32 +1812,51 @@ html.js [data-reveal].is-visible{
     </h2>
 
     <p
-      class="price"
+      class="value-stack-intro"
       data-reveal
       style="--delay:90ms"
     >
-      ₦50,000
+      Your ₦50,000 investment includes:
     </p>
 
     <ul
       class="investment-list"
       data-reveal
-      style="--delay:150ms"
+      style="--delay:140ms"
     >
 
       <li>7-week guided mentorship</li>
-      <li>5 weeks learning + 1 week project</li>
+      <li>6 modules covering 20+ topics</li>
+      <li>5 weeks of learning + 1 week participant project</li>
       <li>Examination + Closing Ceremony</li>
       <li>Free 1-on-1 consultation with FWC</li>
 
     </ul>
 
     <p
+      class="consultation-value"
+      data-reveal
+      style="--delay:200ms"
+    >
+      The 1-on-1 FWC consultation is ordinarily valued at <strong>₦80,000</strong>
+      and is included for SRM participants at no additional cost.
+    </p>
+
+    <p
+      class="price"
+      data-reveal
+      style="--delay:250ms"
+    >
+      ₦50,000
+    </p>
+
+    <p
       class="onboarding"
       data-reveal
-      style="--delay:210ms"
+      style="--delay:310ms"
     >
-      Onboarding: October 1–4
+      Onboarding: October 1–10<br>
+      Registration closes October 7.
     </p>
 
     <div
@@ -1706,6 +1891,10 @@ html.js [data-reveal].is-visible{
       >
         SECURE YOUR PLACE
       </h3>
+
+      <p class="payment-support">
+        Registration closes October 7. Onboarding runs October 1–10.
+      </p>
 
       <p class="eyebrow payment-label">
         Programme investment
@@ -2054,7 +2243,19 @@ html.js [data-reveal].is-visible{
         </summary>
 
         <div class="answer">
-          Onboarding takes place October 1–4.
+          Onboarding takes place October 1–10.
+        </div>
+
+      </details>
+
+      <details>
+
+        <summary>
+          When does registration close?
+        </summary>
+
+        <div class="answer">
+          Registration for this cohort closes October 7.
         </div>
 
       </details>
@@ -2126,7 +2327,8 @@ html.js [data-reveal].is-visible{
       data-reveal
       style="--delay:200ms"
     >
-      Onboarding: October 1–4
+      Onboarding: October 1–10<br>
+      Registration closes October 7.
     </p>
 
     <div

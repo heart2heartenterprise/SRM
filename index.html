@@ -1181,6 +1181,15 @@ html.js [data-reveal].is-visible{
     transform:none;
   }
 }
+
+.offer-anchor{margin:1.5rem 0 .5rem;text-align:center}
+.offer-original-label{display:block;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;opacity:.72}
+.offer-original-price{display:block;margin:.25rem 0;font-size:1.7rem;font-weight:600;text-decoration:line-through;text-decoration-thickness:2px}
+.offer-original-note{display:block;font-size:.85rem;opacity:.65}
+.offer-divider{margin:.35rem 0;font-size:1.1rem;opacity:.65;text-align:center}
+.offer-current-label{display:block;margin-bottom:.15rem;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;opacity:.72}
+.future-pricing-note{margin-top:1rem;font-size:.9rem;opacity:.8}
+
 </style>
 </head>
 
@@ -1520,7 +1529,7 @@ html.js [data-reveal].is-visible{
       data-reveal
       style="--delay:80ms"
     >
-      <em>Here's why SRM exists, in FWC's own words.</em>
+      <em><p><em>Here's why SRM exists, in FWC's own words.</em></p></em>
     </p>
 
     <div class="story-copy">
@@ -1763,7 +1772,7 @@ html.js [data-reveal].is-visible{
       data-reveal
       style="--delay:90ms"
     >
-      Your ₦50,000 investment includes:
+      Your <div class="offer-anchor"><span class="offer-original-label">Total value of what’s included</span><span class="offer-original-price">₦130,000</span><span class="offer-original-note">before the SRM cohort price</span></div><div class="offer-divider">↓</div><div class="offer-current-label">2026 cohort investment</div>₦50,000 investment includes:
     </p>
 
     <ul
@@ -1951,7 +1960,7 @@ html.js [data-reveal].is-visible{
 
   </div>
 
-</section>
+<p class="future-pricing-note"><em>Future SRM cohorts may be priced higher as the curriculum and programme continue to evolve.</em></p></section>
 
 <!-- NOT READY -->
 

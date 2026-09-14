@@ -15,39 +15,28 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBF7F0">
-<!-- Performance v4: queue analytics immediately, load third-party libraries after initial render. -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FWRTG8M3V8"></script>
 <script>
-  /* GA4 queue: events/config are retained until gtag.js loads. */
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-FWRTG8M3V8');
-
-  /* Meta Pixel queue: conversion events can be recorded before fbevents.js loads. */
-  !function(f,b,e,v,n,t,s){
-    if(f.fbq)return;
-    n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!1;n.version='2.0';n.queue=[];
-  }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-  window.addEventListener('load', function(){
-    window.setTimeout(function(){
-      var ga=document.createElement('script');
-      ga.async=true;
-      ga.src='https://www.googletagmanager.com/gtag/js?id=G-FWRTG8M3V8';
-      document.head.appendChild(ga);
-
-      window.fbq('init', '1812071040223222');
-      window.fbq('track', 'PageView');
-      var fb=document.createElement('script');
-      fb.async=true;
-      fb.src='https://connect.facebook.net/en_US/fbevents.js';
-      document.head.appendChild(fb);
-    }, 250);
-  });
+</script>
+<!-- Performance: hero content renders immediately; below-fold reveal animation remains enabled. -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1812071040223222');
+fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1812071040223222&ev=PageView&noscript=1"
@@ -57,16 +46,7 @@ src="https://www.facebook.com/tr?id=1812071040223222&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Fonts are intentionally non-render-blocking. The system fallback paints first, then brand fonts load. -->
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;600;700&display=swap"
-  media="print"
-  onload="this.media='all'"
->
-<noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;600;700&display=swap">
-</noscript>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{

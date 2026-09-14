@@ -1200,6 +1200,31 @@ html.js [data-reveal].is-visible{
 .offer-current-label{display:block;margin-bottom:.15rem;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;opacity:.72}
 .future-pricing-note{margin-top:1rem;font-size:.9rem;opacity:.8}
 
+.value-stack-intro{
+  margin-top:1.5rem;
+  max-width:38rem;
+}
+
+.value-stack-intro > p:last-child{
+  margin-top:1rem;
+}
+
+.consultation-value{
+  margin-top:1rem;
+  color:#F6F1EA;
+  font-size:.95rem;
+}
+
+.section-kicker{
+  margin-bottom:.6rem;
+  color:var(--plum);
+  font-size:.75rem;
+  line-height:1.3;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
 </style>
 </head>
 
@@ -1779,13 +1804,25 @@ html.js [data-reveal].is-visible{
       YOUR INVESTMENT
     </h2>
 
-    <p
+    <div
       class="value-stack-intro"
       data-reveal
       style="--delay:90ms"
     >
-      Your <div class="offer-anchor"><span class="offer-original-label">Total value of what’s included</span><span class="offer-original-price">₦130,000</span><span class="offer-original-note">before the SRM cohort price</span></div><div class="offer-divider">↓</div><div class="offer-current-label">2026 cohort investment</div>₦50,000 investment includes:
-    </p>
+      <p>Your</p>
+
+      <div class="offer-anchor">
+        <span class="offer-original-label">Total value of what’s included</span>
+        <span class="offer-original-price">₦130,000</span>
+        <span class="offer-original-note">before the SRM cohort price</span>
+      </div>
+
+      <div class="offer-divider">↓</div>
+
+      <div class="offer-current-label">2026 cohort investment</div>
+
+      <p>₦50,000 investment includes:</p>
+    </div>
 
     <ul
       class="investment-list"
@@ -1970,9 +2007,12 @@ html.js [data-reveal].is-visible{
 
     </div>
 
-  </div>
+    <p class="future-pricing-note">
+      <em>Future SRM cohorts may be priced higher as the curriculum and programme continue to evolve.</em>
+    </p>
 
-<p class="future-pricing-note"><em>Future SRM cohorts may be priced higher as the curriculum and programme continue to evolve.</em></p></section>
+  </div>
+</section>
 
 <!-- NOT READY -->
 

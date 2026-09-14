@@ -24,6 +24,7 @@
 
   gtag('config', 'G-FWRTG8M3V8');
 </script>
+<!-- Performance: hero content renders immediately; below-fold reveal animation remains enabled. -->
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -45,7 +46,7 @@ src="https://www.facebook.com/tr?id=1812071040223222&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,450;6..72,500;6..72,600&family=Source+Sans+3:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -167,9 +168,10 @@ ul{
 
 .reading-progress span{
   display:block;
-  width:0;
+  width:100%;
   height:100%;
   background:var(--plum);
+  transform:scaleX(0);
   transform-origin:left center;
 }
 
@@ -1213,10 +1215,12 @@ html.js [data-reveal].is-visible{
     <a href="/" class="logo-link" aria-label="Heart2Heart Enterprise home">
       <img
         class="logo"
-        src="heart2heart-logo.png"
+        src="heart2heart-logo.webp"
         alt="Heart2Heart Enterprise"
         width="120"
         height="95"
+        decoding="async"
+        fetchpriority="low"
       >
     </a>
 
@@ -1235,27 +1239,27 @@ html.js [data-reveal].is-visible{
 
   <div class="wrap hero-inner">
 
-    <p class="eyebrow" data-reveal>
+    <p class="eyebrow">
       Heart2Heart Enterprise
     </p>
 
-    <h1 data-reveal style="--delay:80ms">
+    <h1>
       A Journey Into Self That Births Who You Were Made to Be
     </h1>
 
-    <p class="hero-lead" data-reveal style="--delay:140ms">
+    <p class="hero-lead">
       A journey inward to understand who you are.
     </p>
 
-    <p class="hero-sub" data-reveal style="--delay:190ms">
+    <p class="hero-sub">
       From confusion to clarity. From clarity to action.
     </p>
 
-    <p class="hero-meta" data-reveal style="--delay:240ms">
+    <p class="hero-meta">
       7 Weeks · ₦50,000 · Onboarding: October 1–10 · Registration closes October 7
     </p>
 
-    <div class="hero-actions" data-reveal style="--delay:300ms">
+    <div class="hero-actions">
       <button
         type="button"
         class="btn-primary js-enrol"
@@ -1265,7 +1269,7 @@ html.js [data-reveal].is-visible{
       </button>
     </div>
 
-    <p class="secondary-cta" data-reveal style="--delay:350ms">
+    <p class="secondary-cta">
       Not ready to enrol?
       <a
         class="link-secondary js-form"
@@ -1537,7 +1541,7 @@ html.js [data-reveal].is-visible{
       data-reveal
       style="--delay:80ms"
     >
-      <em><p><em>Here's why SRM exists, in FWC's own words.</em></p></em>
+      <em>Here's why SRM exists, in FWC's own words.</em>
     </p>
 
     <div class="story-copy">
@@ -2468,29 +2472,39 @@ function getFormUrl(){
   var progress =
     document.getElementById("readingProgress");
 
+  var progressTicking = false;
+
   function updateReadingProgress(){
 
-    var doc =
-      document.documentElement;
+    if(progressTicking){
+      return;
+    }
 
-    var scrollTop =
-      window.pageYOffset ||
-      doc.scrollTop;
+    progressTicking = true;
 
-    var scrollHeight =
-      doc.scrollHeight -
-      window.innerHeight;
+    requestAnimationFrame(function(){
 
-    var percentage =
-      scrollHeight > 0
-        ? (scrollTop / scrollHeight) * 100
-        : 0;
+      var doc = document.documentElement;
 
-    percentage =
-      Math.min(100, Math.max(0, percentage));
+      var scrollTop =
+        window.scrollY || doc.scrollTop;
 
-    progress.style.width =
-      percentage + "%";
+      var scrollHeight =
+        doc.scrollHeight - window.innerHeight;
+
+      var percentage =
+        scrollHeight > 0
+          ? (scrollTop / scrollHeight)
+          : 0;
+
+      percentage =
+        Math.min(1, Math.max(0, percentage));
+
+      progress.style.transform =
+        "scaleX(" + percentage + ")";
+
+      progressTicking = false;
+    });
   }
 
   window.addEventListener(
@@ -2501,7 +2515,8 @@ function getFormUrl(){
 
   window.addEventListener(
     "resize",
-    updateReadingProgress
+    updateReadingProgress,
+    {passive:true}
   );
 
   updateReadingProgress();
